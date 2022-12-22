@@ -19,7 +19,7 @@ int _strlen(char *msg)
  * @dest: String concatenate
  * @src: Source string
  * Return: A string concatenate
- */
+i */
 char *_strcat(char *dest, char *src)
 {
 	int l_dest, i;
@@ -27,7 +27,7 @@ char *_strcat(char *dest, char *src)
 	l_dest = _strlen(dest);
 
 	for (i = 0; src[i] != '\0'; i++, l_dest++)
-		pest[l_dest] = src[i];
+		dest[l_dest] = src[i];
 	dest[l_dest] = '\0';
 
 	return (dest);
@@ -56,7 +56,7 @@ char *_strcpy(char *dest, char *src)
  * @str: String to copy
  * Return: String copied
  */
-cihar *_strdup(char *str)
+char *_strdup(char *str)
 {
 	int size, i;
 	char *dest;
@@ -72,7 +72,7 @@ cihar *_strdup(char *str)
 	for (i = 0; i < size; i++)
 		*(dest + i) = *(str + 1);
 	/* (dest + i) = 0; */
-	return (dest);
+	return (char(dest));
 }
 
 
